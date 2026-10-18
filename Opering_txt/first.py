@@ -17,10 +17,18 @@ def acrescentar():
         arquivo.write(acrecs)
         print(f"Texto acrescentado {acrecs}")
 
+def atributos():
+    with open("file_test.txt") as arquivo:
+        arqui = arquivo
+        print(arqui.name)
+        print(arqui.mode)
+
+
 def main():
     write_escrita()
     acrescentar()
     read_file()
+    atributos()
 
 if __name__=="__main__":
     main()

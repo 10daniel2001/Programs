@@ -23,12 +23,20 @@ def atributos():
         print(arqui.name)
         print(arqui.mode)
 
+def test_closed():
+    with open("file_test.txt") as arquivo:
+        arquivos = arquivo
+        print(arquivos.closed)
+        arquivo.close()
+        print(arquivos.closed)
+    
 
 def main():
     write_escrita()
     acrescentar()
     read_file()
     atributos()
+    test_closed()
 
 if __name__=="__main__":
     main()

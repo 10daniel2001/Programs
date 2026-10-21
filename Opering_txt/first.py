@@ -20,6 +20,7 @@ def acrescentar():
 def atributos():
     with open("file_test.txt") as arquivo:
         arqui = arquivo
+        print("Tipo de file", type(arqui))
         print(arqui.name)
         print(arqui.mode)
 

@@ -18,7 +18,10 @@ def main():
               for linha in arquivos:
                      dados_alterado.append(linha.strip().upper())
 
-
+       with open("dss.txt", "w") as arqui:
+              for linhas in dados_alterado:
+                     arqui.write(linha + "\n")
+       print("O arquivo foi sobrescrito com os dados modificados.")              
 
 if __name__=="__main__":
        main()

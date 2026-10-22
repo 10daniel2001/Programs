@@ -1,4 +1,6 @@
-with open("dss.txt", "r", encoding="utf-8") as fld:
-    teset = fld.read()
+arquivo = open("dss.txt", "r")
 
-    print(teset)
+conteudo = arquivo.read()
+
+print("Lendo o conteudo ")
+print(repr(conteudo)) # Printando o conteúdo do txt

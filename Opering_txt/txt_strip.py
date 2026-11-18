@@ -9,8 +9,14 @@ def contador_linha():
         print("Total = ", contador)
 
 
-
-
+def function_strip():
+    with open("file_test.txt", "r") as dfile:
+        print("Total de linhas com o strip")
+        contt = 0
+        for flinh in dfile:
+            if flinh.strip():
+                contt += 1
+        print("Cont strip = ", contt)
 
 def main():
     with open("file_test.txt", "r") as arquivo:
@@ -24,8 +30,10 @@ def main():
             linha_limpa = linha.strip()
             print(repr(linha_limpa))
 
-    print("Chamando a funçâo ")
+    print("Chamando a funçâo \n")
     contador_linha()
+    print("Chamando a funçâo com strip\n")
+    function_strip()
 
 if __name__=="__main__":
     main()

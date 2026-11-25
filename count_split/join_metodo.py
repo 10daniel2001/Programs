@@ -1,11 +1,10 @@
-from enum import show_flag_values
-
 
 def  frase():
     texto = ["Lista", "De", "Compras", "Para o ano novo"]
-    etxt = ', '.join(texto)
+    # Criei uma lesta de string
+    etxt = ', '.join(texto) # Join receber a variavel com a lista de string, como parâmetro
 
-    with open("test_join.txt", "w") as file:
+    with open("test_join.txt", "w") as file: # Funçâo open para o arquivo txt
         file.write(etxt)
 
     print("\n")

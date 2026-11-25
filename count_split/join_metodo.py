@@ -8,6 +8,7 @@ def  frase():
         file.write(etxt)
 
     print("\n")
+    # Para a Quebra de linha espaçada
 
     etct2 = "\n".join(texto)
     with open("test_join2.txt", "w") as dfile:

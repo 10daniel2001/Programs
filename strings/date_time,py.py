@@ -23,3 +23,5 @@ print()
 data = datetime.now()
 my_date = f"A data de hoje é {data}"
 print(data)
+dformatada = f"Data formatada é {data:%d/%m/%y}"
+print(dformatada)
